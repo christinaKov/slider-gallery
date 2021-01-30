@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #0F0F0F;
+}
+
+.cat-img {
+    max-width: 90%;
+    margin: 90px auto;
+}
+
+.slider {
+    overflow-y: visible;
+    display: flex;
+    margin: 60px auto;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.slider-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: visible;
+}
+
+.slider-number {
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+    overflow-y: visible;
+}
+
+.slider-name {
+    margin: 0;
+    margin-top: 64px;
+    font-size: 64px;
+    font-weight: 700;
+    position: absolute;
+    display: inline;
+    overflow-y: visible;
+}
+
+.images-container {
+    overflow-x: scroll;
+    display: flex;
+}
+
+.first-slider,
+.third-slider {
+    direction: rtl;
+}
+
+.first-slider img,
+.third-slider img {
+    margin-left: 70px;
+}
+
+.second-slider img {
+    margin-right: 70px;
+}
+
+.first-slider {
+    width: calc(100vw - 128px);
+    margin-right: 128px;
+}
+
+.first-slider .slider-title {
+    margin-left: 135px;
+}
+
+.second-slider {
+    width: calc(100vw - 121px);
+    margin-left: 121px;
+}
+
+.second-slider .slider-title {
+    margin-right: 125px;
+}
+
+.third-slider {
+    width: calc(100vw - 140px);
+    margin-right: 140px;
+}
+
+.third-slider .slider-title {
+    margin-left: 35px;
+}
+
+@media (max-width: 600px) {
+    .first-slider {
+        width: calc(100vw - 64px);
+        margin-right: 64px;
+    }
+    
+    .first-slider .slider-title {
+        margin-left: 68px;
+    }
+    
+    .second-slider {
+        width: calc(100vw - 60px);
+        margin-left: 60px;
+    }
+    
+    .second-slider .slider-title {
+        margin-right: 62px;
+    }
+    
+    .third-slider {
+        width: calc(100vw - 70px);
+        margin-right: 70px;
+    }
+    
+    .third-slider .slider-title {
+        margin-left: 17px;
+    }
+}
